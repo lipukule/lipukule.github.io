@@ -199,6 +199,24 @@ table {
     visibility: hidden;
     display: initial; } }
 
+.glossary-term {
+  text-decoration: dotted underline; }
+  .glossary-term-tooltip {
+    visibility: hidden;
+    background-color: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s;
+    transform: translateX(-25%); }
+  .glossary-term:hover .glossary-term-tooltip {
+    visibility: visible;
+    opacity: 1; }
+
 body {
   padding-bottom: 5rem;
   background-color: var(--body);
