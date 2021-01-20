@@ -86,7 +86,7 @@ table {
   line-height: 20pt;
   letter-spacing: 0px; }
 
-.lt-content-wrapper h1 {
+.lt-content-wrapper h1, .lt-content-wrapper h2 {
   font-family: Raleway;
   font-size: 20pt;
   font-style: normal;
