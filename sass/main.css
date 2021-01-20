@@ -78,7 +78,7 @@ table {
     text-align: center;
     color: var(--on-header); }
 
-.lt-content * {
+.lt-content-wrapper * {
   font-family: Radley;
   font-size: 14pt;
   font-style: normal;
@@ -86,7 +86,7 @@ table {
   line-height: 20pt;
   letter-spacing: 0px; }
 
-.lt-content h1 {
+.lt-content-wrapper h1 {
   font-family: Raleway;
   font-size: 20pt;
   font-style: normal;
@@ -94,10 +94,10 @@ table {
   line-height: 28pt;
   letter-spacing: 0px; }
 
-.lt-content p {
+.lt-content-wrapper p {
   line-height: 23pt; }
 
-.lt-content p + p {
+.lt-content-wrapper p + p {
   margin-top: 20pt; }
 
 .lt-card {
@@ -169,7 +169,8 @@ table {
   display: flex;
   align-items: center;
   padding-left: 2rem;
-  padding-right: 2rem; }
+  padding-right: 2rem;
+  flex-direction: column; }
   .lt-content-wrapper .lt-content {
     max-width: 800px;
     margin-left: auto;
