@@ -195,7 +195,7 @@ noscript + .lt-article-card {
     display: none; }
 
 .lt-site-footer {
-  width: 100vw;
+  width: 100%;
   text-align: center;
   margin-top: 4rem; }
   .lt-site-footer a {
