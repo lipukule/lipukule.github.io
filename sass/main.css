@@ -49,7 +49,8 @@ table {
   --body: #ffffff;
   --on-body: #112211;
   --chip: rgba(18, 18, 18, 0.2);
-  --link: #228199; }
+  --link: #228199;
+  --rim: rgba(0, 0, 0, 0.1); }
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -58,7 +59,8 @@ table {
     --body: #1F1F1F;
     --on-body: #eff0f1;
     --chip: rgba(18, 18, 18, 0.2);
-    --link: #8adcff; } }
+    --link: #8adcff;
+    --rim: rgba(255, 255, 255, 0.1); } }
 
 .lt-top-app-bar {
   width: 100%;
@@ -113,7 +115,8 @@ noscript + .lt-article-card {
 .lt-article-card {
   background-color: var(--body);
   transition: 120ms transform;
-  border-radius: 3px; }
+  border-radius: 3px;
+  border: 1px solid var(--rim); }
   .lt-article-card:hover {
     cursor: pointer;
     transform: translateY(-2px); }
