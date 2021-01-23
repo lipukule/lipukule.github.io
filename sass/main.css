@@ -80,7 +80,8 @@ table {
     line-height: 16px;
     letter-spacing: 0.005em;
     text-align: center;
-    color: var(--on-header); }
+    color: var(--on-header);
+    display: inline; }
 
 .lt-content-wrapper * {
   font-family: Radley;
