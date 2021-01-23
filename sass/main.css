@@ -48,7 +48,8 @@ table {
   --on-header: #ffffff;
   --body: #ffffff;
   --on-body: #112211;
-  --chip: rgba(18, 18, 18, 0.2); }
+  --chip: rgba(18, 18, 18, 0.2);
+  --link: #228199; }
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -56,7 +57,8 @@ table {
     --on-header: #ffffff;
     --body: #1F1F1F;
     --on-body: #eff0f1;
-    --chip: rgba(18, 18, 18, 0.2); } }
+    --chip: rgba(18, 18, 18, 0.2);
+    --link: #8adcff; } }
 
 .lt-top-app-bar {
   width: 100%;
@@ -191,6 +193,13 @@ noscript + .lt-article-card {
     color: var(--on-body); }
   .lt-nav-footer .lt-footer-card--waster {
     display: none; }
+
+.lt-site-footer {
+  width: 100vw;
+  text-align: center;
+  margin-top: 4rem; }
+  .lt-site-footer a {
+    color: var(--link); }
 
 @media screen and (max-width: 799px) {
   .lt-nav-footer {
