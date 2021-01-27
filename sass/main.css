@@ -218,7 +218,10 @@ noscript + .lt-article-card, .lt-article-card + .lt-article-card {
     .lt-article-card-chip + .lt-article-card-chip {
       margin-left: 10px; }
   .lt-article-card-row {
-    display: flex; }
+    display: flex;
+    align-items: baseline; }
+    .lt-article-card-row h3 {
+      margin-top: 0; }
     .lt-article-card-row:not(:first-child) {
       margin-top: 24px; }
     .lt-article-card-row-spacer {
