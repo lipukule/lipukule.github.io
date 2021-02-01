@@ -66,6 +66,31 @@ table {
     --link: #8adcff;
     --rim: rgba(255, 255, 255, 0.1); } }
 
+[data-nasin-lukin="walo"] {
+  --header: #141414;
+  --on-header: #ffffff;
+  --body: #ffffff;
+  --on-body: #112211;
+  --chip: rgba(18, 18, 18, 0.2);
+  --link: #228199;
+  --rim: rgba(0, 0, 0, 0.1);
+  --code: rgba(0, 0, 0, 0.05);
+  --big-code: rgba(0, 0, 0, 0.1); }
+
+[data-nasin-lukin="pimeja"] {
+  --header: #141414;
+  --on-header: #ffffff;
+  --body: #1F1F1F;
+  --on-body: #eff0f1;
+  --chip: rgba(18, 18, 18, 0.2);
+  --code: rgba(255, 255, 255, 0.1);
+  --big-code: #121212;
+  --link: #8adcff;
+  --rim: rgba(255, 255, 255, 0.1); }
+
+* {
+  transition: color 200ms, background-color 200ms; }
+
 .lt-top-app-bar {
   width: 100%;
   height: 48px;
