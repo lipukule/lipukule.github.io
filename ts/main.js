@@ -36,5 +36,40 @@ function applyScheme() {
   }
 }
 
+function addlen(len) {
+  var mu = JSON.parse(localStorage.getItem("lens")) || [];
+  mu.push(len);
+  localStorage.setItem("lens", JSON.stringify(mu));
+  applylens();
+}
+
+function removelen(len) {
+  var mu = JSON.parse(localStorage.getItem("lens")) || [];
+  mu = mu.filter(function (item) {
+    return item != len;
+  });
+  localStorage.setItem("lens", JSON.stringify(mu));
+  applylens();
+}
+
+function applylens() {
+  var items = JSON.parse(localStorage.getItem("lens")) || [];
+  document.querySelectorAll(".lt-card.lt-article-card").forEach(function (item) {
+    var a = [];
+    item.querySelectorAll(".lt-article-card-chip").forEach(function (item) {
+      a.push(item.textContent);
+    });
+
+    if (a.some(function (item) {
+      return items.includes(item);
+    })) {
+      item.classList.add("lipu-len");
+    } else {
+      item.classList.remove("lipu-len");
+    }
+  });
+}
+
 applyScheme();
+applylens();
 

@@ -88,7 +88,7 @@ table {
   --link: #8adcff;
   --rim: rgba(255, 255, 255, 0.1); }
 
-* {
+*:not(button) {
   transition: color 200ms, background-color 200ms; }
 
 .lt-top-app-bar {
@@ -193,7 +193,8 @@ noscript + .lt-article-card, .lt-article-card + .lt-article-card {
   background-color: var(--body);
   transition: 120ms transform;
   border-radius: 3px;
-  border: 1px solid var(--rim); }
+  border: 1px solid var(--rim);
+  position: relative; }
   .lt-article-card:hover {
     cursor: pointer;
     transform: translateY(-2px); }
@@ -251,6 +252,24 @@ noscript + .lt-article-card, .lt-article-card + .lt-article-card {
       margin-top: 24px; }
     .lt-article-card-row-spacer {
       flex-grow: 1; }
+
+.len {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 100ms all; }
+
+.lipu-len {
+  border-radius: 3px; }
+  .lipu-len .len {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    pointer-events: none; }
+  .lipu-len:hover .len {
+    background-color: transparent;
+    backdrop-filter: blur(0px); }
 
 .lt-content-wrapper {
   display: flex;
