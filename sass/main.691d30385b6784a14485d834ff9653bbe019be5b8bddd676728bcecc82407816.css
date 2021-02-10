@@ -335,9 +335,6 @@ table {
   width: 100%;
   height: 64px;
   background-color: var(--header);
-  overflow-x: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   display: grid;
   place-items: center; }
   .lt-top-app-bar h1 {
@@ -362,7 +359,7 @@ table {
     .lt-top-app-bar span.header-grid > *:last-child {
       text-align: right; }
     .lt-top-app-bar span.header-grid > *:not(:first-child):not(:last-child) {
-      flex: 1.1;
+      flex: 0.7;
       text-align: center; }
       .lt-top-app-bar span.header-grid > *:not(:first-child):not(:last-child) a {
         margin-left: 5pt;
