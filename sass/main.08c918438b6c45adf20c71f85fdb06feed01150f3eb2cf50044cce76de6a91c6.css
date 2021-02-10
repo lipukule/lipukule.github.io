@@ -362,8 +362,8 @@ table {
       flex: 0.7;
       text-align: center; }
       .lt-top-app-bar span.header-grid > *:not(:first-child):not(:last-child) a {
-        margin-left: 5pt;
-        margin-right: 5pt; }
+        margin-left: 3pt;
+        margin-right: 3pt; }
     @media screen and (max-width: 799px) {
       .lt-top-app-bar span.header-grid > *:not(:first-child):not(:last-child), .lt-top-app-bar span.header-grid > *:last-child {
         display: none; }
