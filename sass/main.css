@@ -239,6 +239,10 @@ table {
 .fg-link {
   color: var(--link) !important; }
 
+@media (min-width: 800px) {
+  .lili-taso {
+    display: none; } }
+
 :root {
   --header: #141414;
   --on-header: #ffffff;
