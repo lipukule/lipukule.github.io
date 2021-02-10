@@ -357,6 +357,8 @@ table {
       flex: 1; }
     .lt-top-app-bar span.header-grid > *:first-child {
       text-align: left; }
+      .lt-top-app-bar span.header-grid > *:first-child *:last-child {
+        margin-left: 6pt; }
     .lt-top-app-bar span.header-grid > *:last-child {
       text-align: right; }
     .lt-top-app-bar span.header-grid > *:not(:first-child):not(:last-child) {
