@@ -50,7 +50,7 @@ table {
   background-color: var(--lojunu) !important; }
 
 @media (prefers-color-scheme: light) {
-  .bg-lojunu {
+  .bg-lojunu:root:not([data-nasin-lukin="pimeja"]) {
     background-color: var(--lojunu) !important; } }
 
 [data-nasin-lukin="pimeja"] .bg-lojunu {
@@ -69,7 +69,7 @@ table {
   background-color: var(--loje) !important; }
 
 @media (prefers-color-scheme: light) {
-  .bg-loje {
+  .bg-loje:root:not([data-nasin-lukin="pimeja"]) {
     background-color: var(--loje) !important; } }
 
 [data-nasin-lukin="pimeja"] .bg-loje {
@@ -88,7 +88,7 @@ table {
   background-color: var(--lojelo) !important; }
 
 @media (prefers-color-scheme: light) {
-  .bg-lojelo {
+  .bg-lojelo:root:not([data-nasin-lukin="pimeja"]) {
     background-color: var(--lojelo) !important; } }
 
 [data-nasin-lukin="pimeja"] .bg-lojelo {
@@ -107,7 +107,7 @@ table {
   background-color: var(--jelo) !important; }
 
 @media (prefers-color-scheme: light) {
-  .bg-jelo {
+  .bg-jelo:root:not([data-nasin-lukin="pimeja"]) {
     background-color: var(--jelo) !important; } }
 
 [data-nasin-lukin="pimeja"] .bg-jelo {
@@ -126,7 +126,7 @@ table {
   background-color: var(--graso) !important; }
 
 @media (prefers-color-scheme: light) {
-  .bg-graso {
+  .bg-graso:root:not([data-nasin-lukin="pimeja"]) {
     background-color: var(--graso) !important; } }
 
 [data-nasin-lukin="pimeja"] .bg-graso {
@@ -145,7 +145,7 @@ table {
   background-color: var(--laso) !important; }
 
 @media (prefers-color-scheme: light) {
-  .bg-laso {
+  .bg-laso:root:not([data-nasin-lukin="pimeja"]) {
     background-color: var(--laso) !important; } }
 
 [data-nasin-lukin="pimeja"] .bg-laso {
@@ -164,7 +164,7 @@ table {
   background-color: var(--blaso) !important; }
 
 @media (prefers-color-scheme: light) {
-  .bg-blaso {
+  .bg-blaso:root:not([data-nasin-lukin="pimeja"]) {
     background-color: var(--blaso) !important; } }
 
 [data-nasin-lukin="pimeja"] .bg-blaso {
@@ -183,7 +183,7 @@ table {
   background-color: var(--lasewi) !important; }
 
 @media (prefers-color-scheme: light) {
-  .bg-lasewi {
+  .bg-lasewi:root:not([data-nasin-lukin="pimeja"]) {
     background-color: var(--lasewi) !important; } }
 
 [data-nasin-lukin="pimeja"] .bg-lasewi {
@@ -202,7 +202,7 @@ table {
   background-color: var(--lasunu) !important; }
 
 @media (prefers-color-scheme: light) {
-  .bg-lasunu {
+  .bg-lasunu:root:not([data-nasin-lukin="pimeja"]) {
     background-color: var(--lasunu) !important; } }
 
 [data-nasin-lukin="pimeja"] .bg-lasunu {
@@ -221,7 +221,7 @@ table {
   background-color: var(--unu) !important; }
 
 @media (prefers-color-scheme: light) {
-  .bg-unu {
+  .bg-unu:root:not([data-nasin-lukin="pimeja"]) {
     background-color: var(--unu) !important; } }
 
 [data-nasin-lukin="pimeja"] .bg-unu {
