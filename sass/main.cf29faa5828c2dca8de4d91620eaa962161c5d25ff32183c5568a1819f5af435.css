@@ -350,6 +350,7 @@ table {
   .lt-top-app-bar span.header-grid {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     max-width: 800px; }
     .lt-top-app-bar span.header-grid > *:first-child, .lt-top-app-bar span.header-grid *:last-child {
