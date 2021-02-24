@@ -38,6 +38,11 @@ function setTelegramCommentsColor(mode) {
     }
 
     var elm = document.querySelector("#comments-slot");
+
+    if (elm == null) {
+      return;
+    }
+
     var script = document.createElement("script");
     script.src = "https://comments.app/js/widget.js?3";
     script.dataset["dark"] = dark ? "1" : "0";
