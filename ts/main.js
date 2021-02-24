@@ -20,18 +20,72 @@ function toggleScheme() {
   applyScheme();
 }
 
+var matches = window.matchMedia("(prefers-color-scheme: dark)");
+var listener;
+
+function setTelegramCommentsColor(mode) {
+  var apply = function apply(dark) {
+    var frame = document.querySelector("iframe");
+
+    if (frame != null) {
+      frame.remove();
+    }
+
+    var it = document.querySelector("#comments-slot script");
+
+    if (it != null) {
+      it.remove();
+    }
+
+    var elm = document.querySelector("#comments-slot");
+    var script = document.createElement("script");
+    script.src = "https://comments.app/js/widget.js?3";
+    script.dataset["dark"] = dark ? "1" : "0";
+    script.setAttribute("data-comments-app-website", "MRjDiWij");
+    script.dataset["limit"] = "10";
+    script.dataset["dislikes"] = "1";
+    script.dataset["outlined"] = "1";
+    script.dataset["colorful"] = "1";
+    elm.appendChild(script);
+  };
+
+  if (listener != null) {
+    matches.removeListener(listener);
+    listener = null;
+  }
+
+  switch (mode) {
+    case "walo":
+    case "pimeja":
+      apply(mode == "pimeja");
+      break;
+
+    case null:
+      var lis = function lis(ev) {
+        apply(ev.matches);
+      };
+
+      matches.addListener(lis);
+      apply(matches.matches);
+      break;
+  }
+}
+
 function applyScheme() {
   switch (localStorage.getItem("nasin-lukin")) {
     case "walo":
       document.querySelector(":root").setAttribute("data-nasin-lukin", "walo");
+      setTelegramCommentsColor("walo");
       break;
 
     case "pimeja":
       document.querySelector(":root").setAttribute("data-nasin-lukin", "pimeja");
+      setTelegramCommentsColor("pimeja");
       break;
 
     default:
       document.querySelector(":root").setAttribute("data-nasin-lukin", "ala");
+      setTelegramCommentsColor(null);
       break;
   }
 }

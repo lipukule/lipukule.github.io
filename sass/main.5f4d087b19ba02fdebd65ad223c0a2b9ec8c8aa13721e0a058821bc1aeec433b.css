@@ -266,9 +266,9 @@ table {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --header: #141414;
+    --header: rgba(20, 20, 20, 0.5);
     --on-header: #ffffff;
-    --body: #1F1F1F;
+    --body: #15202b;
     --on-body: #eff0f1;
     --chip: rgba(18, 18, 18, 0.2);
     --code: rgba(255, 255, 255, 0.1);
@@ -308,9 +308,9 @@ table {
   --unu: #fbadff; }
 
 [data-nasin-lukin="pimeja"] {
-  --header: #141414;
+  --header: rgba(20, 20, 20, 0.5);
   --on-header: #ffffff;
-  --body: #1F1F1F;
+  --body: #15202b;
   --on-body: #eff0f1;
   --chip: rgba(18, 18, 18, 0.2);
   --code: rgba(255, 255, 255, 0.1);
