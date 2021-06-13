@@ -438,6 +438,9 @@ table {
   .lt-content-wrapper main a:visited {
     filter: brightness(-10%); }
 
+.nobullets ul li, .nobullets ol li {
+  list-style-type: none; }
+
 address {
   display: inline; }
 
