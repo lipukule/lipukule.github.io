@@ -438,6 +438,10 @@ table {
   .lt-content-wrapper main a:visited {
     filter: brightness(-10%); }
 
+.lt-content-wrapper blockquote {
+  padding-left: 1rem;
+  border-left: 1px solid var(--rim); }
+
 .nobullets ul li, .nobullets ol li {
   list-style-type: none; }
 
